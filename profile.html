@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Heinrich Filter - Profile</title>
+        <style type="text/css">
+            /* Buttons got from http://technology.posterous.com/make-css3-buttons-that-are-extremely-fancy  Thanks!*/
+            div.fancy_button {
+                float: left;
+                border-width: 1px;
+                border-style: solid;
+                border-color: transparent transparent #666 transparent;
+                border-color: transparent transparent rgba(202,202,202,0.27) transparent;
+                -webkit-border-radius: 11px; -moz-border-radius: 11px; border-radius: 11px;
+                -webkit-background-clip: padding-box;
+                margin: 5px;
+            }
+
+            div.fancy_button a {
+                background: #555;
+                background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.4)), to(rgba(77,77,77,0.4)));
+                background: -moz-linear-gradient(top, rgba(0,0,0,0.4), rgba(77,77,77,0.4));
+                float: left;
+                padding: 4px;
+                text-decoration: none;
+                outline: 0;
+                -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;
+                -webkit-background-clip: padding-box;
+                width: 210px;
+            }
+
+            div.fancy_button a span {
+                display: block;
+                letter-spacing: -1px;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #ccc #444 #111 #444;
+                border-color: rgba(255,255,255,0.7) rgba(0,0,0,0.3) rgba(0,0,0,0.6) rgba(0,0,0,0.3);
+                font: bold 21px/1em Arial;
+                color: white;
+                padding: 0.48em 2em;
+                text-shadow: rgba(0,0,0,0.45) 0 -1px 0;
+                -webkit-box-shadow: rgba(0,0,0,0.75) 0px 0px 3px; -moz-box-shadow: rgba(0,0,0,0.75) 0px 0px 3px; box-shadow: rgba(0,0,0,0.75) 0px 0px 3px;
+                -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px;
+                background: transparent -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.6)), color-stop(0.5, rgba(255,255,255,0.15)), color-stop(0.5, rgba(255,255,255,0.01)), to(transparent));
+                background: transparent -moz-linear-gradient(top, rgba(255,255,255,0.6), rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.01) 50%, transparent);
+                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#80FFFFFF', endColorstr='#00FFFFFF');
+                -webkit-background-clip: padding-box;
+                margin: auto;
+                text-align: center;
+            }
+
+            div.fancy_button a:hover span {
+                border-top-color: rgba(255,255,255,0.65);
+                background: -webkit-gradient(linear, left top, left bottom, from(rgba(220,220,220,0.6)), color-stop(0.5, rgba(100,100,100,0.2)), color-stop(0.5, rgba(0,0,0,0.21)), to(rgba(0, 0, 0, 0.20)));
+                background: -moz-linear-gradient(top, rgba(220,220,220,0.6), rgba(100,100,100,0.2) 50%, rgba(0,0,0,0.21) 50%, rgba(0, 0, 0, 0.20));
+                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99dcdcdc', endColorstr='#33000000');
+                -webkit-background-clip: padding-box;
+            }
+
+            div.fancy_button a:active span {
+                border-top-color: rgba(255,255,255,0.2);
+                border-left-color: rgba(0,0,0,0.4);
+                background: -webkit-gradient(linear, left top, left bottom, from(rgba(150,150,150,0.6)), color-stop(0.5, rgba(60,60,60,0.6)), color-stop(0.5, rgba(40,40,40,0.6)), to(rgba(20, 20, 20, 0.5)));
+                background: -moz-linear-gradient(top, rgba(150,150,150,0.6), rgba(60,60,60,0.6) 50%, rgba(40,40,40,0.6) 50%, rgba(20, 20, 20, 0.5));
+                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#80969696', endColorstr='#59000000');
+                -webkit-box-shadow: inset 0 0 18px rgba(0,0,0,0.75), rgba(0,0,0,0.75) 0px 0px 3px; -moz-box-shadow: inset 0 0 18px rgba(0,0,0,0.75), rgba(0,0,0,0.75) 0px 0px 3px; box-shadow: inset 0 0 18px rgba(0,0,0,0.75), rgba(0,0,0,0.75) 0px 0px 3px;
+                -webkit-background-clip: padding-box;
+            }
+
+            div.fancy_button a span:active {
+                border-top-color: rgba(255,255,255,0.2);
+                border-left-color: rgba(0,0,0,0.4);
+                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#80969696', endColorstr='#59000000');
+            }
+            body {
+                background: #F5F5F5;
+                background-image: url("bg-pattern.jpg");
+            }
+            #content {
+                background-color: rgba(245,245,245,0.7);
+              	overflow: hidden;
+                border: 10px solid #605A64;
+                padding: 30px;
+                width: 920px;
+                margin: auto;
+            }
+            h1 {
+                font-family: 'Bookman Old Style', 'Serifa BT', 'URW Bookman L', 'itc bookman', times, serif;
+                font-size: 110px;
+                color: #2A3A53;
+                margin: 0px 30px;
+            }
+            p.narrative {
+                font-family: 'Reenie Beanie', arial;
+                color: #6795AF;
+                font-size: 40px;
+                margin: 0px 0px 20px 10px;
+            }
+            p#endNarrative {
+                margin: 0px 0px 0px 55px;
+            }
+            span.button {
+                background-color: #781011 !important;
+            }
+            #buttons {
+                overflow: auto;
+                width: 100%;
+                margin: auto;
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Reenie+Beanie"> 
+    </head>
+    <body>
+        <div id="content">
+            <p id="startNarrative" class="narrative">Hello, I am</p>
+            <h1>Heinrich Filter</h1>
+            <p id="endNarrative" class="narrative">and I'm a Software Developer from South Africa.</p>
+            <br/>
+            <br/>
+            <p class="narrative">For more information:</p>
+            <div id="buttons">
+            <div class="fancy_button">
+                <a href="mailto:webcv@filter.co.za">
+                    <span class="button">Email me</span>
+                </a>
+            </div>
+            <div class="fancy_button">
+                <a href="http://blog.heinrichfilter.com">
+                    <span class="button">Blog</span>
+                </a>
+            </div>
+            <div class="fancy_button">
+                <a href="http://za.linkedin.com/in/heinrichfilter">
+                    <span class="button">LinkedIn</span>
+                </a>
+            </div>
+            <div class="fancy_button">
+                <a href="http://stackoverflow.com/users/101434/heinrich-filter">
+                    <span class="button">StackOverflow</span>
+                </a>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
